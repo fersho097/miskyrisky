@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISKYRIKY - Repostería Artesanal</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #7F1415; /* Nuevo color rojo para el encabezado */
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header img {
+            width: 250px; /* Ajusta el tamaño del logo aquí */
+            margin-bottom: 20px; /* Espacio debajo del logo */
+        }
+
+        header h1 {
+            font-size: 3em; /* Tamaño de letra más grande */
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5em; /* Tamaño de letra más grande */
+        }
+
+        header .slogan {
+            font-size: 1.2em; /* Tamaño del eslogan */
+            margin-top: 10px;
+            font-style: italic; /* Cursiva para el eslogan */
+        }
+
+        header .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #7F1415; /* Color rojo para el texto del botón */
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #7F1415; /* Color rojo para los subtítulos */
+            margin-bottom: 30px;
+            font-size: 2.5em; /* Tamaño de letra más grande */
+        }
+
+        .productos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .producto {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px; /* ancho fijo para que se mantenga ordenado */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .producto:hover {
+            transform: scale(1.05); /* efecto de zoom al pasar el mouse */
+        }
+
+        .producto img {
+            width: 100%; /* imagen se adapta al contenedor */
+            height: auto; /* mantiene la proporción de la imagen */
+            border-bottom: 1px solid #ddd;
+        }
+
+        .producto h3 {
+            color: #7F1415; /* Color rojo para los nombres de los productos */
+            margin: 15px 0;
+            font-size: 1.5em; /* Tamaño de letra más grande */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #7F1415; /* Color rojo para el botón */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="logo.png" alt="Logo de MISKYRIKY"> <!-- Agrega el logo aquí -->
+        <h1>MISKYRIKY</h1> <!-- Nombre de la tienda -->
+        <p>Repostería Artesanal con Ingredientes de la Sierra Peruana</p>
+        <p class="slogan">Siente el sabor de tus raíces</p> <!-- Eslogan agregado -->
+        <a href="#productos" class="btn">Conoce nuestros productos</a>
+    </header>
+
+    <!-- Sección Beneficios -->
+    <section id="beneficios">
+        <h2>Nuestros Beneficios</h2>
+        <div class="beneficios">
+            <div class="beneficio">
+                <h3>Saludable y Nutritivo</h3>
+                <p>Nuestros productos están hechos con superalimentos autóctonos que nutren y cuidan tu salud.</p>
+            </div>
+            <div class="beneficio">
+                <h3>Apoya a Comunidades Locales</h3>
+                <p>Cada compra ayuda a pequeños agricultores locales de la sierra peruana.</p>
+            </div>
+            <div class="beneficio">
+                <h3>Elaborado de Manera Artesanal</h3>
+                <p>Seguimos técnicas tradicionales para ofrecerte lo mejor de la repostería artesanal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Misión y Visión -->
+    <section id="mision-vision">
+        <h2>Misión y Visión</h2>
+        <h3>Misión</h3>
+        <p>Ofrecer dulces nutritivos y saludables, utilizando ingredientes de la sierra peruana, promoviendo la sostenibilidad y el comercio justo.</p>
+        
+        <h3>Visión</h3>
+        <p>Ser una marca líder en repostería saludable y sostenible, reconocida a nivel nacional e internacional por la autenticidad de sus productos.</p>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos un emprendimiento que nació con la misión de ofrecer dulces saludables, utilizando ingredientes autóctonos de la sierra peruana. Creemos en la sostenibilidad y el comercio justo, apoyando a pequeños agricultores locales.</p>
+        <h3>Nuestros Valores</h3>
+        <ul>
+            <li>Autenticidad</li>
+            <li>Sostenibilidad</li>
+            <li>Calidad</li>
+            <li>Innovación</li>
+            <li>Compromiso con la Comunidad</li>
+        </ul>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="keke_de_maca.jpg" alt="Keke de Maca"> <!-- Cambia esto por la URL de la imagen -->
+                <h3>Queque de Maca</h3>
+                <p>Delicioso queque hecho con maca de la sierra, rico en nutrientes y energía natural.</p>
+            </div>
+            <div class="producto">
+                <img src="keke_de_quinua.jpg" alt="Keke de Quinua"> <!-- Cambia esto por la URL de la imagen -->
+                <h3>Queque de Quinua</h3>
+                <p>Exquisito queque elaborado con quinua, lleno de sabor y propiedades nutritivas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form action="mailto:tu_correo@example.com" method="POST" enctype="text/plain"> <!-- Cambia a tu dirección de correo -->
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>También puedes encontrarnos en nuestras redes sociales:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MISKYRIKY - Repostería Artesanal. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
